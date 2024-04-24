@@ -1,0 +1,23 @@
+---
+- name: Delete Block List Entry
+  hosts: checkpoint
+  become: true
+  tasks:
+    - name: Ensure UFW is installed
+      apt:
+        name: ufw
+        state: present
+
+    - name: Add rule to deny specific IP
+      ufw:
+        rule: deny
+        from: 192.168.56.112
+
+    - name: Deleting a Firewall Rule
+      command: ufw delete deny from 192.168.56.112
+
+    - name: Restart UFW Firewall
+      service:
+        name: ufw
+        state: restarted
+        enabled: yes
