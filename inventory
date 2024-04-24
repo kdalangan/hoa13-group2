@@ -1,3 +1,3 @@
 [checkpoint]
 192.168.56.108 ansible_user=joshxhh ansible_password=1234
-
+192.168.56.116 ansible_user=trilift ansible_password=triplelift27
