@@ -11,10 +11,10 @@
     - name: Add rule to deny specific IP
       ufw:
         rule: deny
-        from: 192.168.56.128
+        from: 192.168.56.108
 
     - name: Deleting a Firewall Rule
-      command: ufw delete deny from 192.168.56.128
+      command: ufw delete deny from 192.168.56.108
 
     - name: Restart UFW Firewall
       service:
