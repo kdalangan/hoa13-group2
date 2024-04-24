@@ -2,7 +2,7 @@
 - name: Delete Block List Entry
   hosts: checkpoint
   become: true
-  tasks:
+  tasks: 
     - name: Ensure UFW is installed
       apt:
         name: ufw
