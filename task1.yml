@@ -2,7 +2,7 @@
 - name: Block IP Address
   hosts: checkpoint
   become: true
-  tasks:
+  tasks: 
     - name: Ensure UFW is installed
       apt:
         name: ufw
