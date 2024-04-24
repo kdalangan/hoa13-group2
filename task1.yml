@@ -11,7 +11,7 @@
     - name: Creating a new firewall rule
       ufw:
         rule: deny
-        from: 192.168.56.128
+        from: 192.168.56.108
 
     - name: Restart UFW Firewall
       service:
